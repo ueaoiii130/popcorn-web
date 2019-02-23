@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>POPCORN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popcorn.css">
+    <link rel="stylesheet" href="animation.css">
+    <link rel="icon" href="assets/favicon.png" />
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            var h = $(window).height();
+            $('#loader-bg ,#loader').height(h).css('display', 'block');
+        });
+        
+        $(window).on('load', function () { //全ての読み込みが完了したら実行
+            $('#loader-bg').delay(900).fadeOut(800);
+            $('#loader').delay(600).fadeOut(300);
+            $('#wrap').css('display', 'block');
+        });
+    </script>
+
+</head>
+<body>
+   
+   <div id="loader-bg">
+        <div id="loader">
+            <div class="mascot">
+                <img class="pocholin" src="assets/popcorn01.png" />
+            </div>
+            <p>Now Loading...</p>
+        </div>
+</div>
+<div id="wrap">
+    <section id="hero">
+        <h1>POPCORN</h1>
+        <h2>ハジける、ものづくり。</h2>
+        <img src="assets/popcorngirl2.png" alt="popcorngirl">
+    </section>
+    
+    <section id="product">
+       <div class="container">
+       
+        <h1>MONTHLY THEME</h1>
+        <h2>今月のお題</h2>
+        <div class="theme">
+            <img src="assets/theme-box01.png" alt="01">
+        </div>
+        <div class="box-container">
+        <div class="photo">
+            <img src="kayochu.jpg" alt="" width="205">
+            <div class="icon"></div>
+        </div>
+        <div class="photo">
+           <img src="amazon.jpg" alt="" width="200">
+            <div class="icon"></div>
+        </div>
+        <div class="photo">
+           <img src="design.jpg" alt="" width="200">
+            <div class="icon"></div>
+        </div>
+        <div class="photo">
+           <img src="camera.jpg" alt="" width="200">
+            <div class="icon"></div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section id="next">
+       <div class="container">
+       <h1>NEXT THEME</h1>
+        <h2>来月のお題</h2>
+        <div class="theme">
+            <img src="assets/theme-box02.png" alt="01">
+        </div>
+
+        </div>
+    </section>
+    <section id="join">
+        <h3>何かを作りたい！と思った時、<br>
+        その衝動をだいじに、<br>
+        手を動かしてみませんか？
+        </h3>
+        <button>
+            <p id="btn">MAKE POP</p>
+        </button>
+    </section>
+
+</div>
+    
+    <footer>
+        Copyright (C) 2019 POPCORN
+    </footer>
+    
+    
+</body>
+</html>

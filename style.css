@@ -1,0 +1,225 @@
+@font-face { 
+    font-family: "Yu Gothic M"; 
+    src: local("Yu Gothic Medium");
+}
+@font-face { 
+    font-family: "Yu Gothic M"; 
+    src: local("Yu Gothic Bold"); 
+    font-weight: bold; 
+}
+
+@font-face {
+	font-family: 'Intro';
+	src: url(/assets/Intro.otf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+section{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+body{
+    background: #FFE436;
+    font-family: 
+        'Intro',
+        'TsukuARdGothic-Regular',
+  -apple-system, BlinkMacSystemFont,
+  "游ゴシック体", YuGothic,
+  "Yu Gothic M",
+  "游ゴシック Medium", "Yu Gothic Medium",
+  "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN W3", HiraKakuProN-W3,
+  "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN",
+  "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro",
+  "メイリオ", Meiryo,
+  Osaka,
+  "ＭＳ Ｐゴシック", "MS PGothic",
+  "Helvetica Neue", HelveticaNeue,
+  Helvetica,
+  Arial,
+  "Segoe UI",
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji";
+    
+}
+
+.container{
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.box-container{
+    margin: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+#hero{
+    text-align: center;
+}
+
+#hero h1{
+    font-size: 100px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    letter-spacing: 0.2em;
+    color: #242424;
+}
+#hero h2{
+    font-size: 20px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    padding-top: 120px;
+    letter-spacing: 0.2em;
+    color: #242424;
+}
+#hero img{
+    width: 400px;
+    display: inline-block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+   transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+#product h1{
+    font-size: 42px;
+    text-align: center;
+    padding: 100px 100px 0 100px;
+    letter-spacing: 0.2em;
+}
+#product h2{
+    text-align: center;
+    padding: 10px;
+}
+
+#next{
+    text-align: center;
+}
+
+#next h1{
+    font-size: 42px;
+    text-align: center;
+    padding: 100px 100px 0 100px;
+    letter-spacing: 0.2em;
+}
+#next h2{
+    text-align: center;
+    padding: 10px;
+}
+
+
+
+.theme{
+/*    background-image: url(assets/theme-box.png);*/
+/*    background-size: auto;*/
+    width: 600px;
+    margin: 0 auto;
+}
+
+.theme img{
+    width: 600px;
+    margin: 40px auto;
+}
+.theme p{
+    font-size: 20px;
+    padding: 20px;
+}
+
+.photo{
+    width: 200px;
+    height: 200px;
+    background: #000;
+    position: relative;
+    
+}
+
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background: #fff;
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+ 
+}
+
+
+button{
+    background-color: #242424;
+    padding: 40px;
+    display: inline-block;
+    width: 360px;
+    height: 50px;
+    margin: auto;
+}
+button::before,
+button::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+button,
+button::before,
+button::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+button p{
+        text-align: center;
+    color: #ffffff; 
+    font-size: 32px;
+    font-family: 'Intro';
+    letter-spacing: 0.2em;
+    line-height: 8px;
+}
+button #btn:hover{
+    letter-spacing: 0.4em;
+     -webkit-transition: all .3s;
+      transition: all .3s;
+}
+button #btn::after{
+    letter-spacing: 0.2em;
+     -webkit-transition: all .3s;
+      transition: all .3s;
+}
+
+#join h3{
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px auto;
+}
+#join{
+    text-align: center;
+}
+footer{
+    color: #999;
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}

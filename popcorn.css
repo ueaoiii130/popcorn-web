@@ -1,0 +1,78 @@
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #000;
+  z-index: 1;
+}
+#loader {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: -100px;
+  margin-left: -100px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+
+.mascot {
+  position: absolute;
+  margin: auto;
+    top:20%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  height: 200px;
+  width: 200px;
+}
+.pocholin {
+  -webkit-animation: animationFrames ease-in-out 1s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-fill-mode: forwards;
+  height: 130px;
+  width: 130px;
+  margin: 0 auto;
+  display: block;
+}
+
+
+@-webkit-keyframes animationFrames {
+  0% {
+    -webkit-transform: rotate(-5deg);
+  }
+  10% {
+    -webkit-transform: rotate(5deg);
+  }
+  20% {
+    -webkit-transform: rotate(-5deg);
+  }
+  30% {
+    -webkit-transform: rotate(5deg);
+  }
+  40% {
+    -webkit-transform: rotate(-5deg);
+  }
+  50% {
+    -webkit-transform: rotate(5deg);
+  }
+  60% {
+    -webkit-transform: rotate(-5deg);
+  }
+  70% {
+    -webkit-transform: rotate(5deg);
+  }
+  80% {
+    -webkit-transform: rotate(-5deg);
+  }
+  90% {
+    -webkit-transform: rotate(5deg);
+  }
+}
